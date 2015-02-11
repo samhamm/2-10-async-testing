@@ -1,0 +1,30 @@
+{
+  "name": "2-10-async-testing",
+  "version": "1.0.0",
+  "description": "Assignment for CF JS Dev Acc: a vanilla Node server with Chai testing",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samhamm/2-10-async-testing.git"
+  },
+  "author": "Sam Hamm <samhamm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samhamm/2-10-async-testing/issues"
+  },
+  "homepage": "https://github.com/samhamm/2-10-async-testing",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-simple-mocha": "^0.4.0"
+  }
+}
