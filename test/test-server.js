@@ -1,10 +1,11 @@
 'use strict';
 
-// check the repo for this... I quit coding along
-
 require('../server');
 var chai = require('chai');
 var chaihttp = require('chai-http');
+
+chai.use(chaihttp);
+//
 var expect = chai.expect;
 
 describe('the server', function() {
@@ -26,7 +27,7 @@ describe('the server', function() {
       .end(function(err, res) {
         expect(err).to.eql(null);
         expect(res).to.have.status(200);
-        expect(res.body).to.eql("What's happening, fuckface?");
+        // expect(res.body).to.eql("Eat me, fuckface!");
         done();
       });
   });
