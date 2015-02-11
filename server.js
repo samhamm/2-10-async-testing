@@ -19,6 +19,9 @@ var server  = http.createServer(function (req, res) {
   if (urlPath[1] === 'greet')
     var userName = urlPath[2];
 
+  if (urlPath[1] === 'greet')
+    var userName = urlPath[2];
+
   switch(urlPath[1]) {
     case 'time':
       res.write(theTime);
